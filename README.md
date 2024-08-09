@@ -238,8 +238,8 @@ Assume the input sequence $( X )$ is:
 
 $X$ =
 $\begin{bmatrix}
-1 & 0 & 1 & 0 \\
-0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 0 \\\
+0 & 1 & 0 & 1 \\\
 1 & 1 & 0 & 0
 \end{bmatrix}$
 
@@ -247,16 +247,11 @@ The weight matrices for the queries, keys, and values are:
 
 $W_Q = W_K = W_V =$
 $\begin{bmatrix}
-1 & 0 \\
-0 & 1 \\
-1 & 1 \\
+1 & 0 \\\
+0 & 1 \\\
+1 & 1 \\\
 0 & 0
 \end{bmatrix}$
-
-<!-- test -->
-$\begin{bmatrix} u\\e \end{bmatrix}  \sim 
-N (\begin{bmatrix}0\\0\end{bmatrix},
-\begin{bmatrix} G(\sigma_g) &0\\ 0 &R(\sigma_{\gamma})\end{bmatrix})$
 
 1. **Compute Queries, Keys, Values**:
 
