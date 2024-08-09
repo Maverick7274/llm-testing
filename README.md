@@ -238,8 +238,8 @@ Assume the input sequence $( X )$ is:
 
 $
 X = \begin{bmatrix}
-1 & 0 & 1 & 0 \\
-0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 0 \\\
+0 & 1 & 0 & 1 \\\
 1 & 1 & 0 & 0
 \end{bmatrix}
 $
@@ -247,41 +247,41 @@ $
 The weight matrices for the queries, keys, and values are:
 
 $W_Q = W_K = W_V = \begin{bmatrix}
-1 & 0 \\
-0 & 1 \\
-1 & 1 \\
+1 & 0 \\\
+0 & 1 \\\
+1 & 1 \\\
 0 & 0
 \end{bmatrix}$
 
 1. **Compute Queries, Keys, Values**:
 
 $Q = K = V = X \times W_Q = \begin{bmatrix}
-1 & 1 \\
-0 & 1 \\
+1 & 1 \\\
+0 & 1 \\\
 1 & 1
 \end{bmatrix}$
 
 2. **Compute Attention Scores**:
 
 $\text{Scores} = Q \times K^T = \begin{bmatrix}
-2 & 1 & 2 \\
-1 & 1 & 1 \\
+2 & 1 & 2 \\\
+1 & 1 & 1 \\\
 2 & 1 & 2
 \end{bmatrix}$
 
 3. **Apply Softmax**:
 
 $\text{Softmax(Scores)} = \begin{bmatrix}
-0.422 & 0.155 & 0.422 \\
-0.333 & 0.333 & 0.333 \\
+0.422 & 0.155 & 0.422 \\\
+0.333 & 0.333 & 0.333 \\\
 0.422 & 0.155 & 0.422
 \end{bmatrix}$
 
 4. **Compute Attention Output**:
 
 $\text{Output} = \text{Softmax(Scores)} \times V = \begin{bmatrix}
-1 & 1 \\
-0.667 & 1 \\
+1 & 1 \\\
+0.667 & 1 \\\
 1 & 1
 \end{bmatrix}$
 
