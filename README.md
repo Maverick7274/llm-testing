@@ -253,6 +253,11 @@ $\begin{bmatrix}
 0 & 0
 \end{bmatrix}$
 
+<!-- test -->
+$\begin{bmatrix} u\\e \end{bmatrix}  \sim 
+N (\begin{bmatrix}0\\0\end{bmatrix},
+\begin{bmatrix} G(\sigma_g) &0\\ 0 &R(\sigma_{\gamma})\end{bmatrix})$
+
 1. **Compute Queries, Keys, Values**:
 
 $Q = K = V = X \times W_Q =$
